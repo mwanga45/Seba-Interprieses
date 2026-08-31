@@ -4,8 +4,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'SEBA ENTERPRISES | Quality Supplies for Better Building',
-  description: 'Quality construction, agricultural, plumbing, electrical, and hardware supplies across Kenya.',
-  generator: 'v0.app',
+  description: 'Quality construction, agricultural, plumbing, electrical, and hardware supplies across Tanzania.',
+  generator: 'Prazoo',
   icons: {
     icon: [
       {

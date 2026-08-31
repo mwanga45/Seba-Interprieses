@@ -514,7 +514,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {["Nairobi", "Nakuru", "Eldoret"].map((location, i) => (
+            {[ "Mwanza"].map((location, i) => (
               <div
                 key={location}
                 className="rounded-2xl border border-secondary-foreground/15 p-5"
