@@ -1,5 +1,13 @@
-export const  POST_QUERY = `*[_type ==="post"]order(publishedAt desc){
-_id, produuctName , slug, "imageUrl":image.asset->  url , price , "category":categry->title}`
+export const POSTS_QUERY = `*[_type == "post"] | order(publishedAt desc){
+  _id,
+  productName,
+  "slug": slug.current,
+  description,
+  "image": image.asset->url,
+  price,
+  model,
+  "category": category->title
+}`
 
 export const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   ..., "imageUrl": image.asset->url, "gallery": gallery[].asset->url, "category": category->title
