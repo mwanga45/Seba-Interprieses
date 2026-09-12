@@ -6,23 +6,6 @@ export const metadata: Metadata = {
   title: 'SEBA ENTERPRISES | Quality Supplies for Better Building',
   description: 'Quality construction, agricultural, plumbing, electrical, and hardware supplies across Tanzania.',
   generator: 'Prazoo',
-  icons: {
-    icon: [
-      {
-        url: '/seba_logo_small.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/seba_logo_small.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/seba_logo_small.png',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export const viewport: Viewport = {
