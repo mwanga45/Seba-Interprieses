@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowRight,
   Check,
@@ -69,8 +69,12 @@ export default function HomeClient({ posts }: { posts: Post[] }) {
     [posts, query, category],
   );
 
-  if (typeof window !== "undefined")
-    window.onscroll = () => setShowTop(window.scrollY > 500);
+  useEffect(() => {
+    const handleScroll = () => setShowTop(window.scrollY > 500);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const nav = ["Products", "Why SEBA", "About us", "Locations", "Contact"];
   return (
     <main className="min-h-screen overflow-hidden bg-background">
